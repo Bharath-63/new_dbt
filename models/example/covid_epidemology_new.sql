@@ -1,4 +1,4 @@
-create or update  table "NEW_DB"."PUBLIC"."covid_epidemiology_stats"
+create or update  table "aumdwmdk"."public"."covid_epidemiology_stats"
 as (
 
 with __dbt__CTE__covid_epidemiology_ab1_558 as (
@@ -16,7 +16,7 @@ select
     jsonb_extract_path_text(_airbyte_data, 'total_confirmed') as total_confirmed,
     jsonb_extract_path_text(_airbyte_data, 'total_recovered') as total_recovered,
     _airbyte_emitted_at
-  from "USER".PUBLIC._AIRBYTE_RAW_COVID_EPIDEMIOLOGY
+  from "aumdwmdk".public._airbyte_raw_covid_stats
 
 -- covid_epidemiology
 ),  __dbt__CTE__covid_epidemiology_ab2_558 as (
