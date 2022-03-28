@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 create or update  table "aumdwmdk"."public"."covid_epidemiology_f11__dbt_tmp"
+=======
+create table "aumdwmdk"."public"."covid_epidemiology_f11__dbt_tmp"
+>>>>>>> 176c8966dda59aeb86d3963bae234264f7ccb75a
 as (
 
 with __dbt__CTE__covid_epidemiology_ab1_558 as (
