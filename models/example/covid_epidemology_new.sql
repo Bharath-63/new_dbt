@@ -1,4 +1,4 @@
-create or update  table "aumdwmdk"."public"."covid_epidemiology_stats"
+create table "aumdwmdk"."public"."covid_epidemiology_stats"
 as (
 
 with __dbt__CTE__covid_epidemiology_ab1_558 as (
